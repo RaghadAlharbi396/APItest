@@ -1,4 +1,4 @@
 fastapi
 uvicorn
 joblib
-sklearn
+scikit-learnv
