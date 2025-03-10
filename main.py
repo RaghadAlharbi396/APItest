@@ -11,8 +11,8 @@ logger = logging.getLogger(__name__)
 
 # Load the model and scaler
 try:
-    model = joblib.load('/Users/raghad/Desktop/apps/Usecase-4/ML/SL/Classification/knn_model.joblib')
-    scaler = joblib.load('/Users/raghad/Desktop/study python/Models/scaler.joblib')
+    model = joblib.load('Models/knn_model.joblib')
+    scaler = joblib.load('Models/scaler.joblib')
 except Exception as e:
     logger.error(f"Error loading model or scaler: {str(e)}")
     raise RuntimeError(f"Error loading model or scaler: {str(e)}")
